@@ -69,9 +69,34 @@ app.get("/api/v1/product", async (req, res) => {
 });
 
 
+//  UPDATE
+// app.patch("/api/v1/product/\:id", async (req, res) => {
+
+//  const product = await Product.findById(req.params.id);
+
+//  product.name = req.body.name;
+
+//  product.price = req.body.price;
+
+//  product.description = req.body.description;
+
+//  product.quantity = req.body.quantity;
+
+//  await product.save();
+
+//  res.json({
+
+//  message: "Update Product",
+
+//  data: product
+
+//  });
+
+// });
+
+
 
 // UPDATE
-
 app.patch("/api/v1/product/:id", async (req, res) => {
   const product = await Product.findById(req.params.id);
 
